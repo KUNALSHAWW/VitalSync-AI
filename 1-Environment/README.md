@@ -154,13 +154,7 @@ after you have logged, create a WatsonX instance
 
 [https://www.ibm.com/watsonx](https://www.ibm.com/watsonx)
 
-![image-20230816151655086](assets/images/posts/README/image-20230816151655086.png)
-
 Then open a simple Prompt Lab
-
-![image-20230816152021052](assets/images/posts/README/image-20230816152021052.png)
-
-
 
 Then click  **View Code** and then  click  on  **Create personal API key**
 
