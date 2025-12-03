@@ -322,15 +322,6 @@ Fully discoverable via STDIO, the server also exposes conversation-management he
 
 Explore the project [watsonx-medical-mcp-server](https://github.com/ruslanmv/watsonx-medical-mcp-server).
 
-
-
-## Contributing
-[![Stargazers over time](https://starchart.cc/ruslanmv/ai-medical-chatbot.svg?variant=adaptive)](https://starchart.cc/ruslanmv/ai-medical-chatbot)
-
-Please free to contribute following the standard guidelines for submitting patches and additions or solutions. Feel free to submit issues and enhancement requests.
-
-To more information visit www.ruslanmv.com
-
 ---
 
 ## License
