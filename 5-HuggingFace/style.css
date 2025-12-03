@@ -1,0 +1,138 @@
+/* VitalSync AI - Intelligent Triage Assistant Styles */
+/* Developed by Kunal Shaw */
+
+/* General Container Styles */
+.gradio-container {
+    font-family: "IBM Plex Sans", sans-serif;
+    position: fixed; /* Ensure full-screen coverage */
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Set width to 100% viewport width */
+    height: 100vh; /* Set height to 100% viewport height */
+    margin: 0;    /* Remove margins for full-screen effect */
+    padding: 0;    /* Remove padding for full-screen background */
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); /* Medical blue gradient */
+    color: #fff;    /* Light text color for better readability */
+    overflow-y: auto; /* Allow scrolling for content */
+}
+
+/* Button Styles - VitalSync Teal Theme */
+.gr-button {
+    color: white;
+    background: linear-gradient(135deg, #20B2AA 0%, #008B8B 100%); /* Teal gradient */
+    white-space: nowrap;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(32, 178, 170, 0.3);
+}
+
+.gr-button:hover {
+    background: linear-gradient(135deg, #3CB371 0%, #20B2AA 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(32, 178, 170, 0.4);
+}
+
+.gr-button.secondary {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+    box-shadow: 0 4px 15px rgba(74, 85, 104, 0.3);
+}
+
+.gr-button.secondary:hover {
+    background: linear-gradient(135deg, #718096 0%, #4a5568 100%);
+}
+
+/* Gallery styles */
+#gallery {
+    min-height: 22rem;
+    margin: auto; 
+    border-bottom-right-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+    background-color: rgba(26, 26, 46, 0.8);
+}
+
+/* Centered Container for the Image */
+.image-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #20B2AA;
+    border-radius: 15px;
+    overflow: hidden;
+    max-height: 22rem;
+    background-color: rgba(26, 26, 46, 0.8);
+}
+
+/* Set a fixed size for the image */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(32, 178, 170, 0.3);
+}
+
+/* Output box styles - VitalSync themed */
+.gradio-textbox {
+    background-color: rgba(22, 33, 62, 0.9);
+    color: #E0E0E0;
+    border: 1px solid #20B2AA;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.gradio-textbox:focus {
+    border-color: #3CB371;
+    box-shadow: 0 0 10px rgba(32, 178, 170, 0.5);
+}
+
+/* Input label styling */
+label {
+    color: #87CEEB !important;
+    font-weight: 500;
+}
+
+/* Markdown text styling */
+.markdown-text {
+    color: #B0C4DE;
+}
+
+/* Links styling */
+a {
+    color: #20B2AA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3CB371;
+    text-decoration: underline;
+}
+
+/* File download component */
+.file-preview {
+    background-color: rgba(22, 33, 62, 0.9);
+    border: 1px solid #20B2AA;
+    border-radius: 10px;
+}
+
+/* Custom scrollbar for VitalSync */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #20B2AA;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3CB371;
+}
