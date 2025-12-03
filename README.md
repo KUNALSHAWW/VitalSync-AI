@@ -1,17 +1,17 @@
-# AI Medical Chatbot
+# 🏥 VitalSync AI: Intelligent Triage Assistant
 
 <div align="center">
 
-![AI Medical Chatbot](assets/images/posts/README/im-778762.png)
+![VitalSync AI](assets/images/posts/README/im-778762.png)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/downloads/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-**Production-ready AI Medical Chatbot using IBM WatsonX, OpenAI, and advanced LLM technologies**
+**Intelligent Medical Pre-Screening & Triage System - Bridging the gap between symptoms and care**
 
-[Features](#features) • [Quick Start](#quick-start) • [Installation](#installation) • [Usage](#usage) • [Documentation](#documentation) • [Contributing](#contributing)
+[Features](#features) • [Quick Start](#quick-start) • [Installation](#installation) • [Usage](#usage) • [Contributing](#contributing)
 
 </div>
 
@@ -19,45 +19,64 @@
 
 ## About
 
-The **AI Medical Chatbot** is a production-ready, enterprise-grade conversational AI system designed to provide medical consultation assistance using state-of-the-art technologies including **IBM WatsonX**, **OpenAI GPT models**, and advanced **Retrieval Augmented Generation (RAG)** techniques.
+**VitalSync AI** is an intelligent triage assistant that transforms how users understand and assess their medical symptoms. Built with advanced **LLM technologies**, **Retrieval Augmented Generation (RAG)**, and integrated **safety features**, VitalSync bridges the gap between symptom experience and professional medical care.
 
-**Watsonx.ai** is part of the IBM watsonx platform that brings together new generative AI capabilities, powered by foundation models, and traditional machine learning into a powerful studio spanning the AI lifecycle. With watsonx.ai, you can train, validate, tune, and deploy generative AI, foundation models, and machine learning capabilities with ease and build AI applications in a fraction of the time with a fraction of the data.
+Unlike traditional chatbots, VitalSync AI includes:
+- **🚨 Emergency Triage Layer** - Automatically detects critical situations and provides immediate emergency guidance
+- **📄 Consultation Reports** - Generate downloadable PDF reports for your healthcare provider
+- **🎯 Smart Symptom Analysis** - Context-aware responses using medical knowledge retrieval
+- **🛡️ Safety-First Design** - Built-in disclaimers and professional medical advice recommendations
 
-> **Disclaimer:** This program does not replace a real doctor but helps identify possible health solutions. Always consult with a qualified healthcare professional for medical advice.
+> **Important Disclaimer:** VitalSync AI is for informational purposes only and does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for medical concerns. In case of emergency, call your local emergency services immediately.
 
 ### Release Information
 
-- **Current Version:** 2.0.0
-- **Release Date:** April 2024
+- **Current Version:** 1.0.0
+- **Release Date:** December 2025
 - **Status:** Production-Ready
 
 ---
 
 ## Features
 
+### 🚀 New VitalSync AI Features (v1.0.0)
+
+- **🚨 Emergency Triage Layer**: 
+  - Real-time detection of emergency keywords (heart attack, stroke, suicide ideation, etc.)
+  - Automatic bypass of AI processing for critical situations
+  - Immediate display of emergency contact numbers (911, 112, etc.)
+  - Safety-first approach prioritizing user wellbeing
+
+- **📄 Consultation Report Export**:
+  - Professional PDF generation from chat history
+  - Timestamped consultation transcripts
+  - Medical-grade formatting with disclaimers
+  - Easy sharing with healthcare providers
+
+- **🎨 Professional Medical Dashboard**:
+  - Clean teal/medical blue themed interface
+  - Intuitive symptom input with guided prompts
+  - Clear assessment display with follow-up recommendations
+  - Prominent disclaimer and safety messaging
+
 ### Core Capabilities
 
-- **Multi-Model Support**: Integration with multiple foundation models including:
-  - **flan-ul2-20b** - Encoder decoder model based on T5 architecture (Google)
-  - **mt0-xxl-13b** - Instruction-tuned iteration on mT5 (BigScience)
-  - **gpt-neox-20b** - 20B parameter autoregressive language model (EleutherAI)
-  - **flan-t5-xxl-11b** - 11B parameter Flan-T5 model (Google)
-  - **mpt-7b-instruct** - Decoder-style transformer pretrained on 1T tokens
-  - OpenAI GPT-4 and GPT-3.5 models
-  - Meta Llama 3 fine-tuned variants
+- **Multi-Model Support**: Integration with advanced foundation models:
+  - Meta Llama 3 fine-tuned for medical applications
+  - Mixtral-8x7B for complex reasoning
+  - Custom medical LLM wrapper for VitalSync responses
 
-- **RAG-Powered Responses**: Utilizes Retrieval Augmented Generation for accurate, context-aware medical information
+- **RAG-Powered Responses**: Retrieval Augmented Generation for accurate, context-aware medical information from curated medical knowledge base
 
-- **Vector Database Integration**: Milvus, FAISS, and ChromaDB for efficient similarity search
+- **Vector Database Integration**: Milvus for efficient similarity search across 1000+ medical dialogues
 
-- **Interactive Interfaces**: Gradio-based web UI with medical interviewer capabilities
+- **Interactive Interface**: Gradio-based web UI optimized for medical consultations
 
 - **Production-Ready Infrastructure**:
   - Comprehensive test suite with pytest
   - Type hints and PEP 8 compliance
-  - Automated CI/CD pipeline support
   - Makefile-driven development workflow
-  - Comprehensive documentation
+  - FPDF integration for report generation
 
 ---
 
@@ -78,8 +97,8 @@ The **AI Medical Chatbot** is a production-ready, enterprise-grade conversationa
 pip install uv
 
 # Clone the repository
-git clone https://github.com/ruslanmv/ai-medical-chatbot.git
-cd ai-medical-chatbot
+git clone https://github.com/KUNALSHAWW/VitalSync-AI.git
+cd VitalSync-AI
 
 # Install dependencies
 make install
@@ -95,8 +114,8 @@ make install-gpu
 
 ```bash
 # Clone the repository
-git clone https://github.com/ruslanmv/ai-medical-chatbot.git
-cd ai-medical-chatbot
+git clone https://github.com/KUNALSHAWW/VitalSync-AI.git
+cd VitalSync-AI
 
 # Create virtual environment
 python -m venv venv
@@ -129,7 +148,7 @@ SYSTEM_MESSAGE=You are a helpful medical assistant.
 
 ## Usage
 
-### Running the Medical Chatbot
+### Running VitalSync AI
 
 ```bash
 # Using Makefile
@@ -138,6 +157,15 @@ make run-chatbot
 # Or directly with Python
 python 5-HuggingFace/app.py
 ```
+
+The application will launch at `http://localhost:7860` with the VitalSync AI interface.
+
+### Key Features in Action
+
+1. **Symptom Analysis**: Type your symptoms in the "Describe Your Symptoms" box
+2. **Emergency Detection**: Keywords like "chest pain" or "can't breathe" trigger immediate safety alerts
+3. **Download Reports**: Click "📄 Download Report" to save your consultation as a PDF
+4. **Safe Guidance**: All responses include disclaimers and recommendations to consult healthcare professionals
 
 ### Running the Medical Interviewer
 
@@ -310,7 +338,7 @@ To more information visit www.ruslanmv.com
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ```
-Copyright 2024 Ruslan Magana Vsevolodovna
+Copyright 2025 Kunal Shaw
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -329,30 +357,29 @@ limitations under the License.
 
 ## Author
 
-**Ruslan Magana Vsevolodovna**
+**Kunal Shaw**
 
-- 🌐 Website: [ruslanmv.com](https://ruslanmv.com)
-- 📧 Email: contact@ruslanmv.com
-- 💼 GitHub: [@ruslanmv](https://github.com/ruslanmv)
-- 🤗 Hugging Face: [@ruslanmv](https://huggingface.co/ruslanmv)
+- 📧 Email: kunalshawkol16@gmail.com
+- 💼 GitHub: [KUNALSHAWW](https://github.com/KUNALSHAWW)
+- 🤗 Hugging Face: [KunalShaw](https://huggingface.co/KunalShaw)
 
 ---
 
 ## Acknowledgments
 
-- IBM WatsonX team for their foundation models
+- Original AI Medical Chatbot project by Ruslan Magana Vsevolodovna for the foundational architecture
 - OpenAI for GPT models and APIs
 - Hugging Face for model hosting and deployment infrastructure
-- Tilburg University for empathy research collaboration
-- The open-source community for their invaluable contributions
+- The open-source community for LangChain, Gradio, and other essential tools
+- FPDF library for PDF generation capabilities
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by [Ruslan Magana Vsevolodovna](https://ruslanmv.com)**
+**Made with ❤️ by [Kunal Shaw](https://github.com/KUNALSHAWW)**
 
-[⬆ Back to Top](#ai-medical-chatbot)
+[⬆ Back to Top](#-vitalsync-ai-intelligent-triage-assistant)
 
 </div>
 
