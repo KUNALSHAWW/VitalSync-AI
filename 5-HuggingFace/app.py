@@ -229,8 +229,19 @@ load_dotenv()
 
 COLLECTION_NAME='qa_medical'
 load_dotenv()
+
+# Configuration for Milvus/Zilliz
+milvus_uri = os.environ.get("MILVUS_URI")
+milvus_token = os.environ.get("MILVUS_TOKEN")
 host_milvus = os.environ.get("REMOTE_SERVER", '127.0.0.1')
-connections.connect(host=host_milvus, port='19530')
+
+# Connect to Zilliz Cloud (if URI/Token provided) or Self-Hosted Milvus
+if milvus_uri and milvus_token:
+    print(f"Connecting to Zilliz Cloud: {milvus_uri}")
+    connections.connect(alias="default", uri=milvus_uri, token=milvus_token)
+else:
+    print(f"Connecting to Milvus Host: {host_milvus}")
+    connections.connect(host=host_milvus, port='19530')
 
 
 collection = Collection(COLLECTION_NAME)      
@@ -253,8 +264,10 @@ combined_pipe = (
 # Step 3  - Custom LLM
 from openai import OpenAI
 def generate_stream(prompt, model="mixtral-8x7b"):
-    base_url = "https://ruslanmv-hf-llm-api.hf.space"
-    api_key = "sk-xxxxx"
+    # Use environment variables for flexibility (OpenAI, Groq, or Custom HF Endpoint)
+    base_url = os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1")
+    api_key = os.environ.get("LLM_API_KEY", "sk-xxxxx")
+    
     client = OpenAI(base_url=base_url, api_key=api_key)
     response = client.chat.completions.create(
         model=model,
