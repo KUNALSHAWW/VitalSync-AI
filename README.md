@@ -245,7 +245,7 @@ We have also developed another version which uses a custom LLM
 ## Playground Demo 
 
 
-**VitalSync AI - Medical Chatbot by RAG method**.
+**VitalSync AI - Intelligent Triage Assistant**
 
 [https://huggingface.co/spaces/KunalShaw/VitalSync-AI](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
 
@@ -253,7 +253,7 @@ We have also developed another version which uses a custom LLM
 
 
 
-**VitalSync AI - Medical Chatbot by using Medical-Llama3-8B**
+**Medical Chatbot by using Medical-Llama3-8B**
 
 [https://huggingface.co/spaces/KunalShaw/VitalSync-AI](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
 
