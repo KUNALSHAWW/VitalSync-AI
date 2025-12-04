@@ -245,20 +245,20 @@ We have also developed another version which uses a custom LLM
 ## Playground Demo 
 
 
-**Medical-Chatbot by RAG method**.
+**VitalSync AI - Medical Chatbot by RAG method**.
 
-[https://huggingface.co/spaces/ruslanmv/Medical-Llama3-Chatbot](https://huggingface.co/spaces/ruslanmv/Medical-Llama3-Chatbot)
+[https://huggingface.co/spaces/KunalShaw/VitalSync-AI](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
 
-[![](assets/images/posts/README/future.jpg)](https://huggingface.co/spaces/ruslanmv/AI-Medical-Chatbot)
-
-
-
-**Medical Chatbot by using Medical-Llama3-8B**
-
-[https://huggingface.co/spaces/ruslanmv/Medical-Llama3-Chatbot](https://huggingface.co/spaces/ruslanmv/Medical-Llama3-Chatbot)
+[![](assets/images/posts/README/future.jpg)](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
 
 
-[![](assets/2024-05-16-09-23-02.png)](https://huggingface.co/spaces/ruslanmv/Medical-Llama3-Chatbot)
+
+**VitalSync AI - Medical Chatbot by using Medical-Llama3-8B**
+
+[https://huggingface.co/spaces/KunalShaw/VitalSync-AI](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
+
+
+[![](assets/2024-05-16-09-23-02.png)](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
 
 
 
