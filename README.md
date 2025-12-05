@@ -226,42 +226,6 @@ The structure of the program contains the following main components:
    We develop a medical chatbot multimodal, that from images can give you a description of the issue. We analazize different Medical Images Datasets.
 
 
-## Chatbot with WatsonX
-
-**Implementation of a chatbot with WatsonX in production.**
-
-Here we will create a chatbot with the capability to answer questions by using the Model created before.
-For Production in WatsonX you can checkout this repo
-
-
-[Watsonx-Assistant-with-Milvus-as-Vector-Database](https://github.com/ruslanmv/Watsonx-Assistant-with-Milvus-as-Vector-Database)
-
-
-## Chatbot with Custom LLM 
-We have also developed another version which uses a custom LLM 
-
-[Medical-Chatbot-with-Langchain-with-a-Custom-LLM](https://github.com/ruslanmv/Medical-Chatbot-with-Langchain-with-a-Custom-LLM)
-
-## Playground Demo 
-
-
-**VitalSync AI - Intelligent Triage Assistant**
-
-[https://huggingface.co/spaces/KunalShaw/VitalSync-AI](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
-
-[![](assets/images/posts/README/future.jpg)](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
-
-
-
-**Medical Chatbot by using Medical-Llama3-8B**
-
-[https://huggingface.co/spaces/KunalShaw/VitalSync-AI](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
-
-
-[![](assets/2024-05-16-09-23-02.png)](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
-
-
-
 
 ## Fine-tunning Models with ai-medical chatbot
 
@@ -270,31 +234,27 @@ Currently there are two base models that were pretrained with ai-medical-chatbot
 ## Meta Llama 3
 This repository provides a fine-tuned version of the powerful Llama3 8B model, specifically designed to answer medical questions in an informative way. It leverages the rich knowledge contained in the AI Medical Chatbot dataset.
 
-
-
-
-[Medical-Llama3-8B](https://huggingface.co/ruslanmv/Medical-Llama3-8B)
+[Medical-Llama3-8B](https://huggingface.co/KunalShaw/Medical-Llama3-8B)
 
 The latest version of the Medical Llama 2 v2 with an improved Chatbot Interface in Google Colab
 
 
-[Medical-Llama3-v2](https://huggingface.co/ruslanmv/Medical-Llama3-v2)
+[Medical-Llama3-v2](https://huggingface.co/KunalShaw/Medical-Llama3-v2)
 
 
 
 ## Mixtral-7B
 Fine-tuned Mixtral model for answering medical assistance questions. This model is a novel version of mistralai/Mistral-7B-Instruct-v0.2, adapted to a subset of 2.0k records from the AI Medical Chatbot dataset, which contains 250k records . The purpose of this model is to provide a ready chatbot to answer questions related to medical assistance.
 
-[Medical-Mixtral-7B-v2k](https://huggingface.co/ruslanmv/Medical-Mixtral-7B-v2k)
+[Medical-Mixtral-7B-v2k](https://huggingface.co/KunalShaw/Medical-Mixtral-7B-v2k)
 
-For more details how was pretrained you can visit this post [here](https://ruslanmv.com/blog/How-to-Fine-Tune-Mixtral-87B-Instruct-model-with-PEFT)
 
 > Let us use the best technologies in the world to help us. 
 
 
 
 ## Medical Interviewer
-[![](assets/2024-09-08-19-33-56.png)](https://huggingface.co/spaces/ruslanmv/Medical-Interviewer)
+[![](assets/2024-09-08-19-33-56.png)](https://huggingface.co/spaces/KunalShaw/VitalSync-AI)
 
 Chatbot that perform medical interview
 
@@ -307,20 +267,7 @@ Currently we are developing  a new AI model in collaboration with the [Tilburg U
 
 The study of emotions and their underlying needs is a critical component of understanding human communication, particularly in contexts such as psychology, nonviolent communication (NVC), and conflict resolution. Emotional states often manifest as evaluative expressions—terms like "betrayed," "belittled," or "manipulated"—which not only convey subjective experiences but also point to unmet needs such as trust, respect, or autonomy. Effectively mapping these evaluative expressions to their associated feelings and corresponding needs is vital for creating tools that enhance emotional understanding and foster constructive dialogue.
 
-[![image-20250203130739209](./assets/image-20250203130739209.png)](https://huggingface.co/spaces/ruslanmv/Empathy_Chatbot_v1)
-You can test our current model [here](
-https://huggingface.co/spaces/ruslanmv/Empathy_Chatbot_v1)
-
 For more details of this project click [here](https://github.com/energycombined/empathyondemand)
-## 🩺 Watsonx Medical MCP Server
-Watsonx Medical MCP Server is a micro-service that wraps IBM watsonx.ai behind the MCP protocol, giving watsonx Orchestrate instant access to both a general-purpose chat endpoint (`chat_with_watsonx`) and a medical-symptom assessment tool (`analyze_medical_symptoms`).  
-
-
-[![](https://github.com/ruslanmv/watsonx-medical-mcp-server/raw/master/docs/assets/2025-07-12-19-17-12.png)](https://github.com/ruslanmv/watsonx-medical-mcp-server/blob/master/docs/README.md)
-
-Fully discoverable via STDIO, the server also exposes conversation-management helpers, rich resources/prompts, and ships with a Makefile-driven workflow for linting, auto-formatting, tests, and Docker packaging.  Zero-downtime reloads are achievable in development, and a lightweight Dockerfile plus CI workflow ensure smooth deployment. 
-
-Explore the project [watsonx-medical-mcp-server](https://github.com/ruslanmv/watsonx-medical-mcp-server).
 
 ---
 
